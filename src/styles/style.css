@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "AlegreyaSans";
+    src: url("AlegreyaSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.body {
+    font-family: AlegreyaSans, sans-serif;
+    width: 1116px;
+    margin:0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 61px;
+}
+
+.headerTitle {
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    width: 474px;
+}
+
+.headerButton, .startPageButton {
+    font-family: AlegreyaSans, sans-serif;
+    padding: 11px 40px;
+    background-color: white;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user {
+    border: 1px solid black;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.userInf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.userInf li {
+    font-family: OpenSans, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    height: 44px;
+}
+
+p {
+    margin: 0;
+}
+
+.userInfBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInfButton, .cardButton {
+    font-family: AlegreyaSans, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: black;
+    height: 40px;
+    margin: 2px;
+    width: 200px;
+}
+
+.post {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 491px;
+    height: 143px;
+    font-family: OpenSans, sans-serif;
+}
+
+.postTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    margin: 0;
+}
+
+.postText, .cardUser {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    color: rgba(0,0,0,0.41);
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 143px;
+    width: 239px;
+    border: 1px solid black;
+    margin: 7px;
+}
+
+.cardUserInf {
+    display: flex;
+    flex-direction: column;
+}
+
+.startPage {
+    background: url("./twenty_one_pilots-ride_s.jpg") no-repeat;
+}
+
+.startPageBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.startPageTitle, .startPageDate {
+    font-family: AlegreyaSans, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.startPageTitle {
+    padding-top: 227px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.startPageDate {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+/*.startPageShadow {*/
+/*    background: rgb(0,0,0);*/
+/*    background: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(0,0,0,0.41) 100%);*/
+/*}*/

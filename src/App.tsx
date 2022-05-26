@@ -1,17 +1,25 @@
 import * as React from 'react'
 import {Route, Routes} from 'react-router-dom';
-import Header from './components/Header'
-import UserPage from './routes/UserPage';
-import Post from './routes/Post';
+import Header from './components/Header';
+import CardsList from './components/CardsList';
+import StartPage from './components/StartPage'
 import PostsList from "./routes/PostsList";
+import UsersList from "./routes/UsersList";
+import './styles/style.css'
 
 const App = () => {
 
     return (
-        <div>
+        <div className={'body'}>
             <Header />
+            <StartPage />
+            <div>
+                <h2>Купили билеты</h2>
+                <CardsList />
+            </div>
             <Routes>
-                <Route path="users" element={<UserPage  />} />
+                <Route path="users" element={<UsersList  />} />
+                <Route path="users/:id" element={<UsersList  />} />
                 <Route path="posts" element={<PostsList  />} />
             </Routes>
         </div>

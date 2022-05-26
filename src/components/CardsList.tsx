@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
-import User from '../components/User';
 import {IUser} from "../types/types";
 import axios from "axios";
 import List from "../components/List";
+import Card from "../components/Card";
 
-const UsersList: React.FC = () => {
+const CardsList: React.FC = () => {
     const [users, setUsers] = useState<IUser[]>([])
 
     useEffect(() => {
@@ -21,11 +21,11 @@ const UsersList: React.FC = () => {
     }
 
     return (
-        <List
-            items={users}
-            renderItem={(user: IUser) => <User user={user} key={user.id}/>}
-        />
+            <List
+                items={users}
+                renderItem={(user: IUser) => <Card user={user} key={user.id}/>}
+            />
     )
 }
 
-export default UsersList;
+export default CardsList;

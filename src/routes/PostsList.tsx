@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Post from './Post';
+import Post from '../components/Post';
 import {IPost} from "../types/types";
 import axios from "axios";
 import List from "../components/List";

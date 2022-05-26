@@ -1,37 +1,43 @@
-import React, {useEffect, useState} from "react";
+import React, {FC, useEffect, useState} from 'react';
 import {IUser} from "../types/types";
 import axios from "axios";
-import List from "../components/List";
+import {useParams, useNavigate} from 'react-router-dom';
 
-// interface UserPageProps {
-//     user: IUser;
-// }
+type UserPageParams = {
+    id: string;
+}
 
 const UserPage: React.FC = () => {
-    const [users, setUsers] = useState<IUser[]>([])
+
+    const [user, setUser] = useState<IUser | null>(null)
+    const params = useParams<UserPageParams>()
+    const navigate = useNavigate()
 
     useEffect(() => {
-        fetchUsers()
+        fetchUser()
     }, [])
 
-    async function fetchUsers() {
+    async function fetchUser() {
         try {
-            const response = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users?_limit=10')
-            setUsers(response.data)
+            const response = await axios.get<IUser>('https://jsonplaceholder.typicode.com/users/' + params.id)
+            setUser(response.data)
         } catch (e) {
-            console.log(e)
+            alert(e)
         }
     }
 
     return (
-        <>
-            <h1>HI</h1>
-        <List
-            items={users}
-            renderItem={(user: IUser) => <UserPage key={user.id}/>}
-        />
-        </>
-    )
-}
+        <div>
+            <button onClick={() => navigate('/users')}>Back</button>
+            <h1>Страница пользователя {user?.name}</h1>
+            <div>
+                {user?.email}
+            </div>
+            <div>
+                {user?.id} {user?.name} {user?.email}
+            </div>
+        </div>
+    );
+};
 
 export default UserPage;
