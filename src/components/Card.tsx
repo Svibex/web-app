@@ -1,12 +1,19 @@
 import React from "react";
 import {IUser} from "../types/types";
+import {useParams} from "react-router-dom";
 
 interface CardProps {
     user: IUser;
 }
 
+type CardParams = {
+    id: string;
+}
 
 const Card: React.FC<CardProps> = ({user}) => {
+
+    const params = useParams<CardParams>()
+
     return (
             <div className={'card'}>
                 <div className={'cardUserInf'}>

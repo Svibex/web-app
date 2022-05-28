@@ -1,5 +1,6 @@
 import React from "react";
-import CardsList from "./CardsList";
+import {Link} from "react-router-dom";
+import CardsListPreview from "./CardsListPreview";
 
 const StartPage: React.FC = () => {
     return (
@@ -17,9 +18,11 @@ const StartPage: React.FC = () => {
             <div className='wrapper'>
                 <div className='startPageTickets'>
                     <h2>Купили билеты</h2>
-                    <button className='startPageTicketsButton'>Смотреть всех</button>
+                    <Link to="/users">
+                        <button className='startPageTicketsButton'>Смотреть всех</button>
+                    </Link>
                 </div>
-                <CardsList />
+                <CardsListPreview />
             </div>
             <div>
                 <div className='wrapper startPageInformation'>

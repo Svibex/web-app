@@ -79,7 +79,7 @@ h2 {
     font-family: OpenSans, sans-serif;
     font-size: 18px;
     border: 1px solid black;
-    height: 44px;
+    height: 88px;
 }
 
 p {
@@ -145,6 +145,7 @@ h3 {
     height: 143px;
     width: 239px;
     border: 2px solid rgba(0,0,0,0.3);
+    margin-top: 10px;
 }
 
 .card:hover {
@@ -262,7 +263,7 @@ h3 {
 }
 
 .startPageAboutPlaceText {
-    color: rgba(0,0,0,0.3);
+    color: #939393;
 }
 
 textarea {
@@ -310,6 +311,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 38px;
 }
 
 .startPageAboutGroup {
@@ -322,4 +324,20 @@ textarea {
     letter-spacing: 0;
     text-align: left;
     color: #939393;
+}
+
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.backButton {
+    width: 235px;
+    margin: 0;
+}
+
+.userPageTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

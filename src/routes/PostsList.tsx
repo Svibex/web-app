@@ -1,24 +1,23 @@
 import React, {useEffect, useState} from "react";
 import Post from '../components/Post';
-import {IPost} from "../types/types";
-import axios from "axios";
+import {IPost, IUser} from "../types/types";
 import List from "../components/List";
+import {useParams} from 'react-router-dom';
+import {fetchUserPosts} from "../services";
+
+type PostsListParams = {
+    id: string;
+}
 
 const PostsList: React.FC = () => {
     const [posts, setPosts] = useState<IPost[]>([])
+    const params = useParams<PostsListParams>()
+
+
 
     useEffect(() => {
-        fetchPosts()
+        fetchUserPosts(params.id || '').then((r => setPosts(r || [])))
     }, [])
-
-    async function fetchPosts() {
-        try {
-            const response = await axios.get<IPost[]>('https://jsonplaceholder.typicode.com/posts?_limit=4')
-            setPosts(response.data)
-        } catch (e) {
-            console.log(e)
-        }
-    }
 
     return (
         <List
