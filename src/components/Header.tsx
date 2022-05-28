@@ -8,13 +8,13 @@ const Header = () => {
                     <nav className={'headerNav'}>
                         <Link to="/">
                             <button
-                                className='headerButton'>
+                                className='headerButton buttonVersion'>
                                 Версия для слабовидящих
                             </button>
                         </Link>
                         <Link to="/UserPage">
                             <button
-                                className='headerButton'>
+                                className='headerButton buttonProfile'>
                                 Мой профиль
                             </button>
                         </Link>

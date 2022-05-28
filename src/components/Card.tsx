@@ -10,7 +10,7 @@ const Card: React.FC<CardProps> = ({user}) => {
     return (
             <div className={'card'}>
                 <div className={'cardUserInf'}>
-                    <h3>{user.username}</h3>
+                    <h3 className={'cardUsername'}>{user.username}</h3>
                     <div className={'cardUser'}>{user.name}</div>
                 </div>
                 <button className={'cardButton'}>Смотреть профиль</button>

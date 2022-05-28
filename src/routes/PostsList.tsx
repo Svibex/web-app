@@ -13,7 +13,7 @@ const PostsList: React.FC = () => {
 
     async function fetchPosts() {
         try {
-            const response = await axios.get<IPost[]>('https://jsonplaceholder.typicode.com/posts?_limit=10')
+            const response = await axios.get<IPost[]>('https://jsonplaceholder.typicode.com/posts?_limit=4')
             setPosts(response.data)
         } catch (e) {
             console.log(e)

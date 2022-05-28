@@ -12,12 +12,8 @@ const App = () => {
     return (
         <div className={'body'}>
             <Header />
-            <StartPage />
-            <div>
-                <h2>Купили билеты</h2>
-                <CardsList />
-            </div>
             <Routes>
+                <Route path="/" element={<StartPage  />} />
                 <Route path="users" element={<UsersList  />} />
                 <Route path="users/:id" element={<UsersList  />} />
                 <Route path="posts" element={<PostsList  />} />

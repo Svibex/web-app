@@ -13,7 +13,7 @@ const UsersList: React.FC = () => {
 
     async function fetchUsers() {
         try {
-            const response = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users?_limit=10')
+            const response = await axios.get<IUser[]>('https://jsonplaceholder.typicode.com/users?_limit=4')
             setUsers(response.data)
         } catch (e) {
             console.log(e)
