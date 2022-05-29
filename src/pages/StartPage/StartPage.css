@@ -1,0 +1,177 @@
+.slider {
+    background: url("../../styles/twenty_one_pilots-ride_s.jpg") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 440px;
+}
+
+.slider__shadow {
+    width: 1017px;
+    height: 204px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 118px;
+    background: radial-gradient(ellipse, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
+}
+
+.slider__title {
+    padding-top: 180px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+}
+
+.slider__date {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: 96px;
+    position: relative;
+}
+
+.slider__title, .slider__date {
+    font-family: AlegreyaSans, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.slider__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 995px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    padding-bottom: 28px;
+}
+
+.slider__button {
+    font-family: AlegreyaSans, sans-serif;
+    padding: 11px 40px;
+    background-color: white;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.slider__button-arrow {
+    width: 40px;
+    padding: 0;
+}
+
+.tickets {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.tickets__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startPage__tickets-button {
+    font-family: AlegreyaSans, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: black;
+    height: 40px;
+    margin: 2px;
+    width: 200px;
+}
+
+.startPage__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 996px;
+    margin: 0 auto;
+}
+
+.startPage__information-place {
+    border-left-style: solid;
+    width: 437px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.startPage__information-place-preview,
+.startPage__information-place-text {
+    width: 326px;
+}
+
+.startPage__information-place-preview {
+    font-weight: 600;
+}
+
+.startPage__information-place-text {
+    color: #939393;
+}
+
+.startPage__application {
+    border: 1px solid rgba(0,0,0,0.3);
+    width: 559px;
+    height: 272px;
+}
+
+.startPage__application-title {
+    height: 40px;
+    width: 385px;
+    font-family: OpenSans, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-top: 13px;
+    margin-bottom: 20px;
+}
+
+.startPage__application-textarea {
+    height: 134px;
+    width: 509px;
+    vertical-align: text-top;
+}
+
+.startPage__application-title,
+.startPage__application-textarea {
+    margin-left: 26px;
+}
+
+.startPage__application-button {
+    font-family: AlegreyaSans, sans-serif;
+    height: 35px;
+    margin-left: 428px;
+    margin-top: 20px;
+    width: 115px;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.startPage__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 996px;
+    margin: 0 auto 40px auto;
+}
+
+.startPage__group-text {
+    height: 72px;
+    width: 838px;
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #939393;
+}

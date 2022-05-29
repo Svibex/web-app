@@ -1,0 +1,28 @@
+.comment {
+    border: 1px solid black;
+    width: 996px;
+    margin-bottom: 25px;
+    line-height: 2;
+    padding: 10px;
+}
+
+.comment__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: OpenSans, sans-serif;
+    padding-bottom: 10px;
+}
+
+.comment__title h3:first-letter {
+    text-transform: uppercase;
+}
+
+.comment__text:first-letter {
+    text-transform: uppercase;
+}
+
+.comment__text {
+    font-family: OpenSans, sans-serif;
+    font-size: 15px;
+}
