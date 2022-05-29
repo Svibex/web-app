@@ -7,7 +7,7 @@ export async function fetchUsers(usersNumber: string) {
                 ('https://jsonplaceholder.typicode.com/users?_limit=' + usersNumber)
         return response.data;
     } catch (e) {
-        console.log(e)
+        alert(e)
     }
 }
 
@@ -63,7 +63,6 @@ export async function postComment(id: string | undefined, comment: IComment) {
                 body,
            })
         return response.data
-
     } catch (e) {
         alert(e)
     }

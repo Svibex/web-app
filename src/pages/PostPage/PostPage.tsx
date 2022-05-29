@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
-import Post from '../../components/Post/Post'
-import {IComment, IPost} from "../../types/types";
 import {useParams} from "react-router-dom";
+import Post from '../../components/Post/Post'
 import {fetchComments, fetchUserPost} from "../../services";
 import List from "../../components/List/List";
 import Comment from "../../components/Comment/Comment";
 import Form from "../../components/Form/Form";
 import {postComment} from '../../services'
+import {IComment, IPost} from "../../types/types";
 import './PostPage.css'
 
 type PostPageParams = {

@@ -1,6 +1,6 @@
-import {IUser} from "../../types/types";
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import {IUser} from "../../types/types";
 import './UserCard.css'
 
 interface UserCardProps {

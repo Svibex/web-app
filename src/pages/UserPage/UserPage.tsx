@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {IUser} from "../../types/types";
 import {useParams, useNavigate} from 'react-router-dom';
 import PostsList from "../PostsList/PostsList";
 import {fetchUser} from "../../services";
+import {IUser} from "../../types/types";
 import './UserPage.css'
 
 type UserPageParams = {

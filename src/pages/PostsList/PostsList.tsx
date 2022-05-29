@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import Post from '../../components/Post/Post';
-import {IPost} from "../../types/types";
-import List from "../../components/List/List";
 import {useParams} from 'react-router-dom';
+import Post from '../../components/Post/Post';
+import List from "../../components/List/List";
 import {fetchUserPosts} from "../../services";
+import {IPost} from "../../types/types";
 import './PostsList.css'
 
 type PostsListParams = {

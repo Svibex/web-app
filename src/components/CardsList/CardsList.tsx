@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {IUser} from "../../types/types";
 import List from "../List/List";
 import Card from "../Card/Card";
 import {fetchUsers} from '../../services'
+import {IUser} from "../../types/types";
 
 interface CardsListProps {
     number: string;

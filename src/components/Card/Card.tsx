@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
-import {IUser} from "../../types/types";
 import {useNavigate} from "react-router-dom";
 import {fetchUser} from "../../services";
+import {IUser} from "../../types/types";
 import "./Card.css"
 
 interface CardProps {
