@@ -16,7 +16,7 @@ const Comment: React.FC<CommentProps> = ({comment}) => {
                 <h3>{name}</h3>
                 <h3>{email}</h3>
             </div>
-            <div>{body}</div>
+            <div className='comment__text'>{body}</div>
         </div>
     )
 }

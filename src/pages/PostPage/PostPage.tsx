@@ -55,8 +55,8 @@ const PostPage: React.FC = () => {
                 </div>
             </div>
             <button className='postPage__button'
-                    onClick={() => setIsFormVisible(true)}>
-                Добавить комментарий
+                    onClick={() => setIsFormVisible(!isFormVisible)}>
+                {!isFormVisible? 'Добавить комментарий': 'Отменить'}
             </button>
             {isFormVisible ? <Form addComment={addComment}/> : null}
         </div>

@@ -37,8 +37,7 @@ const Form: React.FC<FormProps> = ({addComment}) => {
             <button className='form__button'
             onClick={() => {
                 addComment(state)
-                setCounter(counter++)
-                console.log(counter)}}>
+                setCounter(counter++)}}>
                 Отправить комментарий</button>
         </div>
     )

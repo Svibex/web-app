@@ -4,7 +4,7 @@
     flex-direction: column;
     width: 996px;
     font-family: OpenSans, sans-serif;
-    margin: 15px auto;
+    margin-bottom: 25px;
     padding: 5px 10px;
 }
 
@@ -17,9 +17,13 @@
     justify-content: space-between;
 }
 
+.post__title h3:first-letter {
+    text-transform: uppercase;
+}
+
 .post__preview {
     width: 300px;
-    height: 100px;
+    height: 115px;
 }
 
 .post__preview .post__text {
@@ -36,5 +40,9 @@
     text-align: left;
     color: black;
     line-height: 2;
-    padding: 10px;
+    padding-top: 10px;
+}
+
+.post__text:first-letter {
+    text-transform: uppercase;
 }
