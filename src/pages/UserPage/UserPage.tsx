@@ -29,24 +29,26 @@ const UserPage: React.FC = () => {
                                 onClick={() => navigate('/users')}>
                             Вернуться к списку пользователей</button>
                     </div>
-                    <ul className='userPage__information'>
-                        <li>{user?.name}</li>
-                        <li>{user?.email}</li>
-                        <li>{user?.phone}</li>
-                        <li>{user?.website}</li>
-                        <li>
-                            <p>{user?.company.name}</p>
-                            <p>{user?.company.bs}</p>
-                        </li>
-                        <div className='userPage__information-buttons'>
-                            <button className='userPage__information-button'>
-                                Написать сообщение
-                            </button>
-                            <button className='userPage__information-button'>
-                                Предложить сходить на концерт
-                            </button>
-                        </div>
-                    </ul>
+                    <div className='userPage__information-ul-wrapper'>
+                        <ul className='userPage__information'>
+                            <li>{user?.name}</li>
+                            <li>{user?.email}</li>
+                            <li>{user?.phone}</li>
+                            <li>{user?.website}</li>
+                            <li>
+                                <p>{user?.company.name}</p>
+                                <p>{user?.company.bs}</p>
+                            </li>
+                            <div className='userPage__information-buttons'>
+                                <button className='userPage__information-button'>
+                                    Написать сообщение
+                                </button>
+                                <button className='userPage__information-button'>
+                                    Предложить сходить на концерт
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div>
