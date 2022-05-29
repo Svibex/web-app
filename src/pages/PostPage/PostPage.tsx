@@ -38,15 +38,23 @@ const PostPage: React.FC = () => {
     }
 
     return (
-        <div>
-            <h2>Пост</h2>
-            <Post post={post} isPreview={false}/>
-            <h2>Комментарии к посту</h2>
-            <List items={comments}
-                  renderItem={(comment: IComment) =>
-                      <Comment comment={comment} key={comment.id}/>}
-            />
-            <button className='cardButton'
+        <div className='postPage'>
+            <div className='postPage__post-wrapper'>
+                <div className='postPage__post'>
+                    <h2>Пост</h2>
+                    <Post post={post} isPreview={false}/>
+                </div>
+            </div>
+            <div className='postPage__comments-wrapper'>
+                <div className='postPage__comments'>
+                    <h2>Комментарии к посту</h2>
+                    <List items={comments}
+                          renderItem={(comment: IComment) =>
+                              <Comment comment={comment} key={comment.id}/>}
+                    />
+                </div>
+            </div>
+            <button className='postPage__button'
                     onClick={() => setIsFormVisible(true)}>
                 Добавить комментарий
             </button>

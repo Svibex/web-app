@@ -59,6 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5px;
 }
 
 .userPage__information p {

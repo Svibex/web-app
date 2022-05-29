@@ -23,15 +23,18 @@ const Form: React.FC<FormProps> = ({addComment}) => {
 
 
     return (
-        <div>
-            <input type="text" name="name" placeholder="name"
-                   onChange={handleChange} />
-            <input type="text" name="email" placeholder="Email"
-                   onChange={handleChange}/>
-            <textarea name="body" placeholder="Добавьте комментарий"
-                      defaultValue=''
-                      onChange={handleChange} />
-            <button className='cardButton'
+        <div className='form'>
+            <div className='form__inputs'>
+                <input type="text" name="name" placeholder="Имя"
+                       onChange={handleChange} />
+                <input type="text" name="email" placeholder="Email"
+                       onChange={handleChange}/>
+            </div>
+            <textarea className='form__textarea'
+                name="body" placeholder="Добавьте комментарий"
+                defaultValue=''
+                onChange={handleChange} />
+            <button className='form__button'
             onClick={() => {
                 addComment(state)
                 setCounter(counter++)
