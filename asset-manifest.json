@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/web-app/static/css/main.03a37516.css",
+    "main.js": "/web-app/static/js/main.27f41815.js",
+    "static/media/twenty_one_pilots-ride_s.jpg": "/web-app/static/media/twenty_one_pilots-ride_s.80119aa7457445e30208.jpg",
+    "static/media/AlegreyaSans-Regular.ttf": "/web-app/static/media/AlegreyaSans-Regular.1700f08d80abc337986e.ttf",
+    "static/media/OpenSans-Regular.ttf": "/web-app/static/media/OpenSans-Regular.57cd57a648021fa1c396.ttf",
+    "index.html": "/web-app/index.html",
+    "main.03a37516.css.map": "/web-app/static/css/main.03a37516.css.map",
+    "main.27f41815.js.map": "/web-app/static/js/main.27f41815.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03a37516.css",
+    "static/js/main.27f41815.js"
+  ]
+}
