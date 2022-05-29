@@ -1,6 +1,6 @@
 import React from "react";
 import {IComment} from "../../types/types";
-import './Comment.css'
+import "./Comment.css";
 
 interface CommentProps {
     comment: IComment;

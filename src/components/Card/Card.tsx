@@ -1,7 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import {IUser} from "../../types/types";
-import "./Card.css"
+import "./Card.css";
 
 interface CardProps {
     user: IUser;

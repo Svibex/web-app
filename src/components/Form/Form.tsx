@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {IComment} from "../../types/types";
-import './Form.css'
+import './Form.css';
 
 interface FormProps {
     addComment: (comment: IComment) => void;
