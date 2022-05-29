@@ -1,7 +1,3 @@
-export interface IAddress {
-    city: string;
-}
-
 export interface ICompany {
     name: string;
     bs: string;
@@ -13,7 +9,6 @@ export interface IUser {
     username: string;
     email: string;
     website: string;
-    address: IAddress;
     company: ICompany;
     phone: string;
 }
