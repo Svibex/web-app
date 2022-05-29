@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
-import User from '../components/User';
-import {IUser} from "../types/types";
-import axios from "axios";
-import List from "../components/List";
+import UserCard from '../UserCard/UserCard';
+import {IUser} from "../../types/types";
+import List from "../List/List";
 import {useNavigate} from 'react-router-dom';
-import {fetchUsers} from "../services";
+import {fetchUsers} from "../../services";
 
 const UsersList: React.FC = () => {
     const [users, setUsers] = useState<IUser[]>([])
@@ -18,7 +17,7 @@ const UsersList: React.FC = () => {
         <List
             items={users}
             renderItem={(user: IUser) =>
-                <User
+                <UserCard
                     onClick={(user) => navigate('/users/' + user.id)}
                     user={user}
                     key={user.id}

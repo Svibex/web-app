@@ -1,39 +1,40 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import CardsListPreview from "./CardsListPreview";
+import CardsList from "../CardsList/CardsList";
+import './StartPage.css'
 
 const StartPage: React.FC = () => {
     return (
-        <div className='startPage'>
-            <div className='startPageBackground'>
-                <div className='startPageShadow'> </div>
-                    <div className='startPageTitle'>Twenty One Pilots</div>
-                    <div className='startPageDate'>22.02.23 в 21:00</div>
-                <div className='startPageBtns'>
-                    <button className='startPageButton buttonArrow'>&lt;</button>
-                    <button className='startPageButton buttonProfile'>Купить билет</button>
-                    <button className='startPageButton buttonArrow'>&gt;</button>
+        <div>
+            <div className='startPage'>
+                <div className='startPage__shadow'> </div>
+                    <div className='startPage__title'>Twenty One Pilots</div>
+                    <div className='startPage__date'>22.02.23 в 21:00</div>
+                <div className='startPage_navigation'>
+                    <button className='startPage__button startPage__button-arrow'>&lt;</button>
+                    <button className='startPage__button'>Купить билет</button>
+                    <button className='startPage__button startPage__button-arrow'>&gt;</button>
                 </div>
             </div>
-            <div className='wrapper'>
-                <div className='startPageTickets'>
+            <div className='startPage__tickets'>
+                <div className='startPage__tickets-title'>
                     <h2>Купили билеты</h2>
                     <Link to="/users">
-                        <button className='startPageTicketsButton'>Смотреть всех</button>
+                        <button className='startPage__tickets-button'>Смотреть всех</button>
                     </Link>
                 </div>
-                <CardsListPreview />
+                <CardsList number='4' />
             </div>
             <div>
-                <div className='wrapper startPageInformation'>
-                    <div className='startPagePlace'>
+                <div className='startPage__information'>
+                    <div>
                         <h2>О площадке</h2>
-                        <div className='startPageAboutPlace'>
-                            <div className='startPageAboutPreview'>
+                        <div className='startPage__information-place'>
+                            <div className='startPage__information-place-preview'>
                                 Современная площадка для проведения
                                 концертов и других мероприятий любой
                                 сложности.</div>
-                            <div className='startPageAboutPlaceText'>
+                            <div className='startPage__information-place-text'>
                                 Мы предоставляем всю необходимую для
                                 организаторов инфраструктуру и готовые
                                 решения под все основные задачи любого
@@ -42,17 +43,18 @@ const StartPage: React.FC = () => {
                                 стандартам. </div>
                         </div>
                     </div>
-                    <div className='startPageApplication'>
-                        <div className='startPageApplicationTitle'>
+                    <div className='startPage__application'>
+                        <div className='startPage__application-title'>
                             Оставить заявку на проведение концерта</div>
-                        <textarea placeholder='Расскажите о вашем предложении'/>
-                        <button className='startPageApplicationButton cardButton'>Отправить</button>
+                        <textarea className='startPage__application-textarea'
+                            placeholder='Расскажите о вашем предложении'/>
+                        <button className='startPage__application-button'>Отправить</button>
                     </div>
                 </div>
             </div>
-            <div className='wrapper startPageGroup'>
-                <h2 className='startPageGroupTitle'>О группе</h2>
-                <div className='startPageAboutGroup'>
+            <div className='startPage__group'>
+                <h2>О группе</h2>
+                <div className='startPage__group-text'>
                     Twenty One Pilots — американский дуэт из
                     Колумбуса, штат Огайо. Группа образовалась
                     в 2009 году и на данный момент состоит из

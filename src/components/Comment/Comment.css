@@ -1,0 +1,13 @@
+.comment {
+    border: 1px solid black;
+    width: 996px;
+    margin: 15px auto;
+    line-height: 2;
+    padding: 10px;
+}
+
+.comment__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

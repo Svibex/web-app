@@ -1,13 +1,13 @@
 @font-face {
     font-family: "AlegreyaSans";
-    src: url("AlegreyaSans-Regular.ttf") format("truetype");
+    src: url("fonts/AlegreyaSans-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: "OpenSans";
-    src: url("OpenSans-Regular.ttf") format("truetype");
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
@@ -19,104 +19,25 @@ ul {
 
 button {
     height: 40px;
+    font-family: AlegreyaSans, sans-serif;
 }
 
-.body {
+button:hover {
+    cursor: pointer;
+    background-color: #939393;
+    color: black;
+}
+
+#root {
     font-family: AlegreyaSans, sans-serif;
     width: 1116px;
     margin:0 auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 0 61px;
-    height: 70px;
-}
-
-.headerTitle {
-    color: white;
-    font-size: 28px;
-    line-height: 60px;
-    letter-spacing: 2px;
-}
-
-.headerNav {
-    display: flex;
-    justify-content: space-between;
-    width: 474px;
-}
-
-.headerButton, .startPageButton {
-    font-family: AlegreyaSans, sans-serif;
-    padding: 11px 40px;
-    background-color: white;
-    letter-spacing: 1px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.user {
-    border: 1px solid black;
 }
 
 h2 {
     font-weight: 600;
     font-size: 35px;
     line-height: 40px;
-}
-
-.userInf {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-}
-
-.userInf li {
-    font-family: OpenSans, sans-serif;
-    font-size: 18px;
-    border: 1px solid black;
-    height: 88px;
-}
-
-p {
-    margin: 0;
-}
-
-.userInfBtns {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.userInfButton, .cardButton, .startPageTicketsButton {
-    font-family: AlegreyaSans, sans-serif;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 11px;
-    font-weight: 600;
-    background-color: black;
-    height: 40px;
-    margin: 2px;
-    width: 200px;
-}
-
-.post {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    width: 491px;
-    height: 143px;
-    font-family: OpenSans, sans-serif;
-}
-
-.postTitle {
-    display: flex;
-    justify-content: space-between;
 }
 
 h3 {
@@ -127,217 +48,12 @@ h3 {
     margin: 0;
 }
 
-.postText, .cardUser {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: left;
-    color: rgba(0,0,0,0.41);
-}
-
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    height: 143px;
-    width: 239px;
-    border: 2px solid rgba(0,0,0,0.3);
-    margin-top: 10px;
-}
-
-.card:hover {
-    border: 2px solid black;
-}
-
-.cardUserInf {
-    display: flex;
-    flex-direction: column;
-}
-
-.startPageBackground {
-    background: url("./twenty_one_pilots-ride_s.jpg") no-repeat;
-    background-size: 100%;
-    width: 100%;
-    height: 440px;
-}
-
-.startPageBtns {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 995px;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    padding-bottom: 28px;
-}
-
-
-.startPageTitle, .startPageDate {
-    font-family: AlegreyaSans, sans-serif;
-    font-weight: 700;
-    color: white;
-}
-
-.startPageTitle {
-    padding-top: 180px;
-    font-size: 50px;
-    line-height: 60px;
-    text-align: center;
-    position: relative;
-}
-
-.startPageDate {
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    padding-bottom: 96px;
-    position: relative;
-}
-
-.startPageShadow {
-    width: 1017px;
-    height: 204px;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: 118px;
-    background: radial-gradient(ellipse, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
-}
-
-.wrapper {
-    width: 1020px;
-    margin: 0 auto;
-}
-
-.startPageTickets {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttonVersion {
-    width: 257px;
-}
-
-.buttonProfile {
-    width: 205px;
-}
-
-.buttonArrow {
-    width: 40px;
-    padding: 0;
-}
-
-.cardUsername, .cardUser {
-    padding-left: 20px;
-}
-
-.cardUsername {
-    padding-top: 20px;
-}
-
-.cardButton {
-    margin-left: 20px;
-    margin-top: 30px;
-    padding: 0;
-    width: 140px;
-    height: 35px;
-}
-
-.startPageAboutPlace {
-    border-left-style: solid;
-    width: 437px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.5;
-}
-
-.startPageAboutPreview, .startPageAboutPlaceText {
-    width: 326px;
-}
-
-.startPageAboutPreview {
-    font-weight: 600;
-}
-
-.startPageAboutPlaceText {
-    color: #939393;
-}
-
-textarea {
-    height: 134px;
-    width: 509px;
-    vertical-align: text-top;
-}
-
-.startPageInformation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.startPageApplication {
-    border: 1px solid rgba(0,0,0,0.3);
-    width: 559px;
-    height: 272px;
-}
-
-.startPageApplicationTitle {
-    height: 40px;
-    width: 385px;
-    font-family: OpenSans, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: 0;
-    text-align: left;
-    padding-top: 13px;
-}
-
-.startPageApplicationTitle, textarea {
-    margin-left: 26px;
-}
-
-.startPageApplicationButton {
-    height: 35px;
-    margin-left: 428px;
-    margin-top: 20px;
-    width: 115px;
-}
-
-.startPageGroup {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 38px;
-}
-
-.startPageAboutGroup {
-    height: 72px;
-    width: 838px;
-    font-family: OpenSans, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0;
-    text-align: left;
-    color: #939393;
-}
-
 a, button {
     cursor: pointer;
     text-decoration: none;
 }
 
-.backButton {
-    width: 235px;
-    margin: 0;
-}
-
-.userPageTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+li {
+    vertical-align: middle;
+    text-align: center;
 }

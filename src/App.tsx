@@ -1,24 +1,26 @@
 import * as React from 'react'
 import {Route, Routes} from 'react-router-dom';
-import Header from './components/Header';
-import StartPage from './components/StartPage'
-import PostsList from "./routes/PostsList";
+import Header from './components/Header/Header';
+import StartPage from './pages/StartPage/StartPage'
+import PostsList from "./pages/PostsList/PostsList";
 import './styles/style.css'
-import UserPage from "./routes/UserPage";
-import CardsList from "./components/CardsList";
+import UserPage from "./pages/UserPage/UserPage";
+import UsersList from "./components/UsersList/UsersList";
+import PostPage from './pages/PostPage/PostPage';
 
 const App = () => {
 
     return (
-        <div className={'body'}>
+        <>
             <Header />
             <Routes>
                 <Route path="/" element={<StartPage  />} />
-                <Route path="users" element={<CardsList  />} />
+                <Route path="users" element={<UsersList  />} />
                 <Route path="users/:id" element={<UserPage  />} />
-                <Route path="posts" element={<PostsList  />} />
+                <Route path="users/:id/posts" element={<PostsList number='100'/>} />
+                <Route path="posts/:id/comments" element={<PostPage />} />
             </Routes>
-        </div>
+        </>
     );
 }
 
