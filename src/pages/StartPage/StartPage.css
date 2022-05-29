@@ -86,6 +86,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 996px;
+    margin: 0 auto;
 }
 
 .startPage__information-place {
@@ -140,17 +142,25 @@
 }
 
 .startPage__application-button {
+    font-family: AlegreyaSans, sans-serif;
     height: 35px;
     margin-left: 428px;
     margin-top: 20px;
     width: 115px;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0;
 }
 
 .startPage__group {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 38px;
+    width: 996px;
+    margin: 0 auto 40px auto;
 }
 
 .startPage__group-text {
