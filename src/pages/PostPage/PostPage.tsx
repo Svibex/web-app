@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import Post from '../../components/Post/Post'
+import Post from '../../components/Post/Post';
 import {fetchComments, fetchUserPost} from "../../services";
 import List from "../../components/List/List";
 import Comment from "../../components/Comment/Comment";
 import Form from "../../components/Form/Form";
-import {postComment} from '../../services'
+import {postComment} from '../../services';
 import {IComment, IPost} from "../../types/types";
-import './PostPage.css'
+import './PostPage.css';
 
 type PostPageParams = {
     id: string;
@@ -15,26 +15,22 @@ type PostPageParams = {
 
 const PostPage: React.FC = () => {
 
-    const [comments, setComments] = useState<IComment[]>([])
-    const [post, setPost] = useState<IPost | null>(null)
-    const params = useParams<PostPageParams>()
-    const [isFormVisible, setIsFormVisible] = useState(false)
+    const [comments, setComments] = useState<IComment[]>([]);
+    const [post, setPost] = useState<IPost | null>(null);
+    const params = useParams<PostPageParams>();
+    const [isFormVisible, setIsFormVisible] = useState(false);
 
     useEffect(() => {
-        fetchComments(params.id || '').then(r => {
-            setComments(r || []);
-        })
-    }, [])
-
-    useEffect(() => {
-        fetchUserPost(params.id || '').then((r =>
-            setPost(r || null)))
-    }, [])
+        fetchUserPost(params.id || '')
+            .then((r => setPost(r || null)));
+        fetchComments(params.id || '')
+            .then(r => setComments(r || []));
+    }, []);
 
     function addComment(comment: IComment) {
-            postComment(params.id, comment).then((r => console.log(r)))
-            setComments(() => [...comments, comment])
-            setIsFormVisible(false)
+        postComment(params.id, comment).then((r => console.log(r)));
+        setComments(() => [...comments, comment]);
+        setIsFormVisible(false);
     }
 
     return (
@@ -56,11 +52,11 @@ const PostPage: React.FC = () => {
             </div>
             <button className='postPage__button'
                     onClick={() => setIsFormVisible(!isFormVisible)}>
-                {!isFormVisible? 'Добавить комментарий': 'Отменить'}
+                {!isFormVisible ? 'Добавить комментарий' : 'Отменить'}
             </button>
             {isFormVisible ? <Form addComment={addComment}/> : null}
         </div>
-    )
-}
+    );
+};
 
 export default PostPage;

@@ -27,3 +27,7 @@ export interface IComment {
     email: string;
     body: string;
 }
+
+export interface IPostsListProps {
+    postsNumber: string;
+}

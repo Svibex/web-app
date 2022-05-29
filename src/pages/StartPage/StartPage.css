@@ -1,11 +1,11 @@
-.startPage {
+.slider {
     background: url("../../styles/twenty_one_pilots-ride_s.jpg") no-repeat;
     background-size: 100%;
     width: 100%;
     height: 440px;
 }
 
-.startPage__shadow {
+.slider__shadow {
     width: 1017px;
     height: 204px;
     position: absolute;
@@ -14,7 +14,7 @@
     background: radial-gradient(ellipse, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 85%);
 }
 
-.startPage__title {
+.slider__title {
     padding-top: 180px;
     font-size: 50px;
     line-height: 60px;
@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.startPage__date {
+.slider__date {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -30,13 +30,13 @@
     position: relative;
 }
 
-.startPage__title, .startPage__date {
+.slider__title, .slider__date {
     font-family: AlegreyaSans, sans-serif;
     font-weight: 700;
     color: white;
 }
 
-.startPage_navigation {
+.slider__navigation {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -45,7 +45,7 @@
     padding-bottom: 28px;
 }
 
-.startPage__button {
+.slider__button {
     font-family: AlegreyaSans, sans-serif;
     padding: 11px 40px;
     background-color: white;
@@ -54,17 +54,17 @@
     font-weight: 600;
 }
 
-.startPage__button-arrow {
+.slider__button-arrow {
     width: 40px;
     padding: 0;
 }
 
-.startPage__tickets {
+.tickets {
     width: 1020px;
     margin: 0 auto;
 }
 
-.startPage__tickets-title {
+.tickets__header {
     display: flex;
     justify-content: space-between;
     align-items: center;

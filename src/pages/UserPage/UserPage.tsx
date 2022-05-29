@@ -3,7 +3,7 @@ import {useParams, useNavigate} from 'react-router-dom';
 import PostsList from "../PostsList/PostsList";
 import {fetchUser} from "../../services";
 import {IUser} from "../../types/types";
-import './UserPage.css'
+import './UserPage.css';
 
 type UserPageParams = {
     id: string;
@@ -11,12 +11,12 @@ type UserPageParams = {
 
 const UserPage: React.FC = () => {
 
-    const [user, setUser] = useState<IUser | null>(null)
-    const params = useParams<UserPageParams>()
-    const navigate = useNavigate()
+    const [user, setUser] = useState<IUser | null>(null);
+    const params = useParams<UserPageParams>();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        fetchUser(params.id || '').then((r => setUser(r || null)))
+        fetchUser(params.id || '').then((r => setUser(r || null)));
     }, [])
 
     return (
@@ -24,7 +24,7 @@ const UserPage: React.FC = () => {
             <div className='userPage__border'>
                 <div className='userPage'>
                     <div className='userPage__information-wrapper'>
-                        <h2>{(user?.username) ? user.username.toUpperCase() : ''}</h2>
+                        <h2>{user?.username.toUpperCase()}</h2>
                         <button className='userPage__backButton'
                                 onClick={() => navigate('/users')}>
                             Вернуться к списку пользователей</button>
@@ -61,7 +61,7 @@ const UserPage: React.FC = () => {
                                 Посмотреть все
                         </button>
                     </div>
-                <PostsList number='3' />
+                <PostsList postsNumber='3' />
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
     padding: 5px 10px;
 }
 
-.post:hover {
+.post__preview:hover {
     cursor: pointer;
 }
 

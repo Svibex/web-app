@@ -8,7 +8,7 @@ interface UserCardProps {
     onClick: (user: IUser) => void;
 }
 
-const UserCard: React.FC<UserCardProps> = ({user, onClick}) => {
+const UserCard: React.FC<UserCardProps> = ({user}) => {
 
     const navigate = useNavigate()
 

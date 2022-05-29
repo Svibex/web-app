@@ -3,24 +3,20 @@ import {useParams} from 'react-router-dom';
 import Post from '../../components/Post/Post';
 import List from "../../components/List/List";
 import {fetchUserPosts} from "../../services";
-import {IPost} from "../../types/types";
+import {IPost, IPostsListProps} from "../../types/types";
 import './PostsList.css'
 
 type PostsListParams = {
     id: string;
 }
 
-interface PostsListProps {
-    number: string;
-}
-
-const PostsList: React.FC<PostsListProps> = ({number}) => {
+const PostsList: React.FC<IPostsListProps> = ({postsNumber}) => {
     const [posts, setPosts] = useState<IPost[]>([])
     const params = useParams<PostsListParams>()
 
     useEffect(() => {
-        fetchUserPosts(params.id || '', number).then((r =>
-            setPosts(r || [])))
+        fetchUserPosts(params.id || '', postsNumber)
+            .then((r => setPosts(r || [])))
     }, [])
 
     return (
