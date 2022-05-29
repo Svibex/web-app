@@ -14,7 +14,7 @@ const App = () => {
         <>
             <Header />
             <Routes>
-                <Route path="/web-app" element={<StartPage  />} />
+                <Route path="/" element={<StartPage  />} />
                 <Route path="users" element={<UsersList  />} />
                 <Route path="users/:id" element={<UserPage  />} />
                 <Route path="users/:id/posts" element={<PostsList postsNumber='100'/>} />
