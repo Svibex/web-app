@@ -1,0 +1,44 @@
+.card__button {
+    font-family: AlegreyaSans, sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: black;
+    margin: 30px 2px 2px 20px;
+    padding: 0;
+    width: 140px;
+    height: 35px;
+}
+
+.card__user-username, .card__user-name {
+    padding-left: 20px;
+}
+
+.card__user-username {
+    padding-top: 20px;
+}
+
+.card__user-name {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #939393;
+    line-height: 17px;
+}
+
+.card {
+    height: 143px;
+    width: 239px;
+    border: 2px solid rgba(0,0,0,0.3);
+    margin-top: 10px;
+}
+
+.card:hover {
+    border: 2px solid black;
+}
+
+.card__user {
+    display: flex;
+    flex-direction: column;
+}

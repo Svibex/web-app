@@ -1,0 +1,94 @@
+.userPage__border {
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.userPage {
+    border: 1px solid black;
+    width: 996px;
+    margin: 0 auto 40px auto;
+}
+
+.userPage__backButton,
+.userPage__information-button,
+.userPage__post-button {
+    font-family: AlegreyaSans, sans-serif;
+    color: white;
+    background-color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.userPage__backButton {
+    width: 245px;
+    margin-right: 40px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.userPage__information-wrapper {
+    width: 955px;
+    margin: 0 auto;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userPage__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+    width: 996px;
+    margin: 0 auto;
+}
+
+.userPage__information-ul-wrapper {
+    width: 1114px;
+    margin-left: -60px;
+    border: 1px solid black;
+}
+
+.userPage__information li {
+    font-family: OpenSans, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.userPage__information p {
+    margin: 0;
+}
+
+.userPage__information-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.userPage__information-button {
+    margin-top: 2px;
+}
+
+.userPage__post-wrapper {
+    border: 1px solid black;
+    width: 1114px;
+    margin: 0 auto;
+}
+
+.userPage__post {
+    width: 996px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.userPage__post-button {
+    padding: 5px 10px;
+}

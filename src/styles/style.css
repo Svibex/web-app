@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "AlegreyaSans";
+    src: url("fonts/AlegreyaSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    height: 40px;
+    font-family: AlegreyaSans, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #939393;
+    color: black;
+}
+
+#root {
+    font-family: AlegreyaSans, sans-serif;
+    width: 1116px;
+    margin:0 auto;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: left;
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+li {
+    vertical-align: middle;
+    text-align: center;
+}

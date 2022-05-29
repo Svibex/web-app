@@ -1,0 +1,10 @@
+.postsList__wrapper {
+    width: 1114px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.postsList {
+    width: 996px;
+    margin: 0 auto;
+}
