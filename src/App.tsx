@@ -5,7 +5,7 @@ import StartPage from './pages/StartPage/StartPage'
 import PostsList from "./pages/PostsList/PostsList";
 import './styles/style.css'
 import UserPage from "./pages/UserPage/UserPage";
-import UsersList from "./components/UsersList/UsersList";
+import UsersList from "./pages/UsersList/UsersList";
 import PostPage from './pages/PostPage/PostPage';
 
 const App = () => {

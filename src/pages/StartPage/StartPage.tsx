@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import CardsList from "../CardsList/CardsList";
+import CardsList from "../../components/CardsList/CardsList";
 import './StartPage.css'
 
 const StartPage: React.FC = () => {

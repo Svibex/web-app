@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
-import UserCard from '../UserCard/UserCard';
+import UserCard from '../../components/UserCard/UserCard';
 import {IUser} from "../../types/types";
-import List from "../List/List";
+import List from "../../components/List/List";
 import {useNavigate} from 'react-router-dom';
 import {fetchUsers} from "../../services";
 

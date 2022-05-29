@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {IUser} from "../../types/types";
-import List from "../../components/List/List";
-import Card from "../../components/Card/Card";
+import List from "../List/List";
+import Card from "../Card/Card";
 import {fetchUsers} from '../../services'
 
 interface CardsListProps {
